@@ -26,7 +26,17 @@ body {
     background-color: #f6f6f6;
 }
 .f10{
-    color: #f10215;
+    color: #f10215!important;
+}
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?4oyz0t');
+    src:  url('../fonts/icomoon.eot?4oyz0t#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?4oyz0t') format('truetype'),
+    url('../fonts/icomoon.woff?4oyz0t') format('woff'),
+    url('../fonts/icomoon.svg?4oyz0t#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 /*header部分*/
 header{
@@ -46,6 +56,11 @@ header{
 }
 .shortcut li {
     float: left;
+}
+.shortcut i {
+    font-family: "icomoon";
+    font-style: normal;/*让倾斜的不倾斜*/
+    color: #ccc;
 }
 .space {/*小竖线*/
     width: 2px;
