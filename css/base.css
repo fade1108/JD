@@ -13,8 +13,20 @@ ul {
     margin: 0;
     padding: 0;
 }
+a {
+    text-decoration: none;
+    font-size: 12px;
+    color: #999999;
+
+}
+a:hover {
+    color: #c81623;
+}
 body {
     background-color: #f6f6f6;
+}
+.f10{
+    color: #f10215;
 }
 /*header部分*/
 header{
@@ -24,14 +36,22 @@ header{
 /*快速导航栏begin*/
 .shortcut{
     height: 30px;
+    line-height: 30px;
     background-color: #e3e4e5;
-    line-height: 12px;
     border-bottom: 1px solid #ddd;
-    font-size: 12px;
-    color: #999;
 }
 .city {
     margin-left: 200px;
+
+}
+.shortcut li {
+    float: left;
+}
+.space {/*小竖线*/
+    width: 2px;
+    height: 15px;
+    background-color: #ccc;
+    margin: 10px 12px 0; /*上是10 左右是12 下是0*/
 }
 /*快速导航栏over*/
 
