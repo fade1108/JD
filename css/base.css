@@ -1,34 +1,17 @@
-.w{//版心的公共类
-   width: 1190px;
+/*版心的公共类*/
+.w{
+    width: 1190px;
     margin: 0 auto;
 }
-.fl{/*浮动的公共类*/
-    float: left;
-}
-.fr{
-    float: right;
-}
-ul,h1{
-    margin: 0;
-    padding: 0;
-}
-ul {
-    list-style: none;
-
-}
-a {
-    text-decoration: none;
-    font-size: 12px;
-    color: #999999;
-
-}
-a:hover {
-    color: #c81623;
+/*header部分*/
+header {
+    height: 80px;
+    background-color: #020000;
 }
 body {
     background-color: #f6f6f6;
 }
-.f10{
+.f10 {
     color: #f10215!important;
 }
 @font-face {
@@ -41,67 +24,72 @@ body {
     font-weight: normal;
     font-style: normal;
 }
-/*header部分*/
-header{
-    height: 80px;
-    background-color: #020000;
+.fl {
+    float: left;
 }
-/*快速导航栏begin*/
-.shortcut{
+.fr {
+    float: right;
+}
+a {
+    text-decoration: none;
+    color: #999;
+    font-size: 12px;
+}
+a:hover{
+    color: #c81623;
+}
+ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+/*快速导航栏开始*/
+.shortcut {
+    background-color: #e3e4e5;
     height: 30px;
     line-height: 30px;
-    background-color: #e3e4e5;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #dddddd;
 }
 .city {
     margin-left: 200px;
-
+}
+.shortcut a {
+    /*取消下划线*/
+    text-decoration: none;
 }
 .shortcut li {
     float: left;
 }
 .shortcut i {
-    font-family: "icomoon";
-    font-style: normal;/*让倾斜的不倾斜*/
-    color: #ccc;
+    font-family: 'icomoon';
+    /*让倾斜的不倾斜*/
+    font-style: normal;
+    color: blue;
 }
-.space {/*小竖线*/
-    width: 2px;
-    height: 15px;
-    background-color: #ccc;
-    margin: 10px 12px 0; /*上是10 左右是12 下是0*/
+.space{
+    width: 1px;
+    height: 10px;
+    background-color: #fe9f5b;
+    margin: 10px 12px 0;
 }
-.mobile{
-    position: relative;
-}
-.mobile img{
+.mobile {
+    /*给父亲一个定位*/
     position: absolute;
-    left: -12px;
-    top: 24px;
-    border: 1px solid #cccccc;
+
+}
+.mobile img {
+    /*绝对定位*/
+    position: absolute;
+    right: 127px;
+    top: 113px;
+    border: 1px solid #ccc;
     padding: 3px;
 }
-/*快速导航栏over*/
+/*快速导航栏结束*/
 /*中间大部分*/
 .middle {
     height: 140px;
-    position: relative;
-    background-color: #f7f7f7;
-
+    background-color: pink;
 }
-.logo{
-    top: -30px;
-    position: absolute;
-    left: 0;
-}
-.logo a{
-    display: block;
-    width: 190px;
-    height: 170px;
-    background:#fff url("../public/images/logo.png")no-repeat;
-
-}
-
-
 
 

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #d1{
+            color: pink;
+        }
+        #text1{
+
+            /*background-color: yellow;*/
+            font-style: italic;/*斜体*/
+        }
+        .font36{font-size: 36px;}
+        .text-danger{color: red !important;}
+        p.text-danger{background-color: yellow}
+        .bg-waning{background-color: yellow;}
+
+        .text-danger.font36{
+            /*匹配具有俩个类名的*/
+            font-style: italic;
+        }
+        /*元素名.类名*/
+        span.font36{
+            background-color: #00B7FF;
+            font-style: italic;
+        }
+        /*群组选择器*/
+        #d1,span,.text-danger,p,h2,div{
+            margin: 0px;
+            padding: 0px;
+        }
+        /*后代选择器*/
+        table tr td{
+            color: red;
+            font-size: 50px;
+        }
+        #d1 table td {font-size: 80px ; color: #00B7FF}
+            div>table td{
+                background-color: azure;
+            }
+    </style>
+</head>
+<body>
+
+<span class="text-danger , font36 , bg-waning">QWERTY一</span>
+<div id = "d1" class="text-danger">去去去AQAQAAQAQ
+<table>
+    <tr>
+        <td>
+            888888888888888888888
+        </td>
+    </tr>
+</table>
+</div>
+<p class="text-danger">sadasdasdsadas</p>
+<h2 id="text1">内容随意萨达大厦</h2>
+<table>
+    <tr>
+        <td>sssssssssssssss</td>
+    </tr>
+</table>
+<td>aaaaaaaaaaaa</td>
+
+</body>
+</html>

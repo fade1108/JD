@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>border</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #d1,#d2,#d3{
+            width: 200px;
+            height: 200px;
+            border: 2px solid red;
+            border-top: dotted;
+        }
+        #d1{
+            border-color: #00B7FF;
+            border-right-width: 50px;
+            background-color: #faa;
+        }
+        #d2 {
+            border-style: dotted;
+            border-color: #fe9f5b;
+
+        }
+        #d3 {
+            border-color: #020000;
+        }
+        #d4 {
+            width: 300px;
+            height: 300px;
+            border-radius: 20%;
+            border-top-right-radius: 50%;
+            border-bottom-left-radius: 50%;
+            background-color: #00B7FF;
+            box-shadow: 10px 10px 5px ;
+
+        }
+
+        
+
+        .iris {
+            width: 40%;
+            height: 40%;
+            margin: 30%;
+            border-radius: 50%;
+            background-color: #ff3928;
+            box-shadow: 10px 10px 5px 0px #1bffd1 inset;
+            -webkit-transform: translateX(68px) translateY(-60px) skewX(15deg) skewY(2deg);
+            position: absolute;
+            -webkit-animation: move-eye-skew 5s ease-out infinite;
+        }
+        .iris:before {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 37.5%;
+            height: 37.5%;
+            border-radius: 50%;
+            top: 31.25%;
+            left: 31.25%;
+            background: black;
+        }
+        .iris:after {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 31.25%;
+            height: 31.25%;
+            border-radius: 50%;
+            top: 18.75%;
+            left: 18.75%;
+            background: rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+<body>
+<!--<div id="d1"></div>-->
+<!--<div id="d2"></div>-->
+    <!--<div id="d3"></div>-->
+    <div id="d4"></div>
+<section class="stage">
+    <figure class="ball">
+        <span class="shadow"></span>
+        <span class="iris"></span>
+    </figure>
+</section>
+
+</body>
+</html>
