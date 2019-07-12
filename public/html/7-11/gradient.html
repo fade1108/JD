@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .d1{
+            width: 1200px;height: 1200px;
+            <!--/*线性渐变*/-->
+            <!--background-image:linear-gradient(to right, #00c3ff 0px,-->
+            <!--#ffff1c 100px -->
+
+            <!--);-->
+        }
+
+        .d2{
+
+            width: 200px;height: 200px;
+            background-image: radial-gradient(100px at center center,
+            #000 50px,#ff0 100px,#000 150px,#0ff 170px,#000 200px);
+
+        }
+
+        .d4{
+            border-top-right-radius: 50%;
+            border-bottom-left-radius: 50%;
+            width: 400px;height: 400px;
+            background-image:repeating-radial-gradient(100px at center center,
+            #000 50px,#ff0 100px,#000 150px,#0ff 170px,#f43c2e 200px,#0a0a6f 250px);
+
+        }
+        .d5{
+            width: 200px;height: 200px;
+            /*为了兼容各个浏览器的内核 需要写很多遍 遇到不同的浏览器，浏览器会自动挑选，解析*/
+            background: -webkit-linear-gradient(bottom,#f6f6f6,#ffaaaa
+            );
+            background: -moz-linear-gradient(bottom,#f6f6f6,#ffaaaa
+            );
+            background: -ms-linear-gradient(bottom,#f6f6f6,#ffaaaa
+            );
+            background: -o-linear-gradient(bottom,#f6f6f6,#ffaaaa
+            );
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+<div class="d1" style= "background-image: linear-gradient(to top, rgb(0, 195, 255), rgb(255, 255, 28));">
+    <div class="d4"></div>
+</div>
+<br>
+<hr>
+
+<div class="d2">
+    径向渐变
+</div>
+<br>
+<br>
+<div class="d4">
+    <br>
+</div>
+  <div class="d5">
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

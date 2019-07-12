@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*.c1,.c2,.c3,.c4,.c5,.c6{*/
+            /*width: 200px;height: 200px;*/
+        /*}*/
+        /*.c1{*/
+
+            /*background: #ff0000;*/
+            /*float: left;*/
+        /*}*/
+        /*.c2{*/
+            /*height: 400px;*/
+            /*background: #020000;*/
+            /*float: left;*/
+
+        /*}*/
+        /*.c3{*/
+            /*height: 600px;*/
+            /*background: #1bffd1;*/
+            /*float: right;*/
+        /*}*/
+        /*.c4{*/
+            /*background-color: #00B7FF;*/
+            /*float: left;*/
+        /*}*/
+        /*.c5{*/
+            /*background-color: #999999;*/
+            /*float: left;*/
+        /*}*/
+        /*.c6{*/
+            /*background-color: #ffff00;*/
+            /*float: left;*/
+        /*}*/
+        #d1{
+            height: 200px;
+            background-color: #ff0000;
+            float: left;
+        }
+        #d2{
+            height: 200px;
+            background-color: #00B7FF;
+            float: left;
+        }
+        .c3{
+            width: 300px;
+            height: 300px;
+            background-color: #999999;
+            float: right;
+        }
+        .c3 span{
+            width: 200px;
+            height: 200px;
+            float: right;
+            background-color: #ffaaaa;
+
+        }
+
+    </style>
+</head>
+<body>
+<!--
+定位：定义元素在页面的位置
+1.普通流定位
+2.浮动定位
+3.相对定位
+4.绝对定位
+5.固定定位
+
+
+ 1.普通流定位
+
+2.浮动定位
+让块级元素横向显示
+float:left/right
+1脱离默认文档流
+2.在当前行。向左向右看齐
+3.元素一旦浮动，会变成块级元素，尺寸，垂直外边距都生效
+4.文本。行内元素。行内块元素，是不会被任何浮动元素压在下面。
+环绕着浮动元素显示
+5.行内元素浮动后自动升级为块级元素。有了宽高
+6.清楚浮动效果 clear: none 不清除浮动
+right 清除之前右浮动元素给我的影响
+left
+both 左右
+
+
+高度坍塌
+父元素如果不设置高度，高度默认是内部内容撑起来的
+如果内部所有元素都浮动起来了，那么父元素认为内部就没有内容了
+所以就发生了高度坍塌。父元素内容高度为零
+解决高度坍塌的终极方案
+多设置一个div设置清除浮动，不设置宽高。
+父类元素就不会发生高度坍塌
+
+
+
+
+
+
+-->
+<div class="c1" id="d1">111</div>
+<div class="c2" id="d2">111</div>
+<div class="c3">
+    <span>123123</span>
+</div>
+<div class="c4"></div>
+<div class="c5"></div>
+<div class="c6"></div>
+
+
+</body>
+</html>
