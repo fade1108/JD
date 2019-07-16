@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>display</title>
+    <style>
+
+      .a1{
+          height: 100px;width: 100px;
+          background-color: #ff0000;
+          display: inline;
+      }
+      .a2{
+            height: 100px;width: 100px;
+          background-color: #005aa0;
+          display: block;
+        }
+      .a3{
+          height: 100px;width: 100px;
+          background-color: #00B7FF;
+          display: inline-block;
+      }
+      .a4{
+          height: 100px;width: 100px;
+      }
+        div{
+            width: 200px;height: 200px;
+            background-color: #00B7FF;
+            margin: 10px;
+        }
+        #d2{
+            /* hidden隐藏   隐藏后依旧占位*/
+            visibility: hidden;
+
+        }
+        #d3{
+            opacity: .2;
+        }
+      img{
+          /*设置图片与图片前后的垂直对齐方式*/
+          vertical-align: top;
+      }
+      img:hover{
+          cursor: wait;
+      }
+
+
+    </style>
+</head>
+<body>
+<div id="d1">11111</div>
+<div id="d2">22222</div>
+<div id="d3">333333</div>
+<img src="../../images/logo.png" alt="">
+123213<img src="../../images/ico.png" alt="">给象拔蚌看
+<br>
+<br>
+<hr>
+    <a class="a1" href="#">行内元素</a>
+    <a class="a2" href="#">块级元素</a>
+    <a class="a3" href="#">行内块级元素</a>
+    <a class="a4" href="#"></a>
+</body>
+</html>

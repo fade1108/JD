@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #d1{
+            width: 400px;height: 400px;
+            background-color: #ff0;
+        }
+        #d1>div{
+            width: 200px;height: 200px;
+            background-color: #0ff;
+            margin-top: 30px;
+        }
+        /*解决外边距溢出*/
+        #d1::before{
+            content: "";
+            display: table;
+        }
+        /*解决高度坍塌*/
+        #d2::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        #d2{
+            border: 20px solid #0a0a6f;
+        }
+        #d2>div{
+            width: 200px;height: 200px;
+            background-color: #0ff;
+            float: left;
+        }
+        /*兄弟选择器，除了第一个 而后的每一个div*/
+        #d2>div+div{
+            margin-left: 10px;
+        }
+        /*#d2>#d3{*/
+            /*clear: both;*/
+            /*width: 0px;height: 0px;*/
+            /*float: none;*/
+        /*}*/
+    </style>
+</head>
+<body>
+<div id="d2">
+    <div></div>
+    <div></div>
+    <div></div>
+
+</div>
+
+
+
+
+<!--<div id="d1">-->
+
+    <!--<div>-->
+
+    <!--</div>-->
+<!--</div>-->
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>转换</title>
+    <style>
+        <!--转换属性-->
+
+        div{width: 200px;height: 200px;
+        position: relative;
+            top: 0;
+            left: 0;
+        }
+        #d1{
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background-color: #0ff;
+
+        }
+        #d2{
+            position: absolute;
+            width: 200px;
+            height: 200px;
+
+            background-color: #ff0;
+            /*!*改变元素角度*!*/
+            /*transform: rotate(90deg);*/
+            /*!*转换原点*!*/
+            /*transform-origin: 0px 0px;*/
+
+            /*位移*/
+            transform:translate(0px,0px);
+
+
+        }
+
+        /*
+        2D转换 1 位移
+
+
+        */
+
+    </style>
+</head>
+
+
+
+<body>
+<div>
+<div id="d1">
+参考元素
+</div>
+<div id="d2">
+转换元素
+</div>
+</div>
+</body>
+</html>

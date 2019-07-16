@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>伪元素选择器</title>
+    <style>
+        /*匹配元素的首行首字符
+        first-letter或者::first-letter
+        */
+
+
+
+
+
+      h4::first-letter{
+          color: #f00;
+          font-family: Chiller;
+      }
+        h4::first-line{
+            color: #ffaaaa;
+            font-family: Chiller;
+        }
+        /*selection 选中部分*/
+        h4::selection{
+            color: #fe9f5b;
+            background-color: #020000;
+        }
+        /*必须背 内容生成
+           content设置这个元素文本内容
+           content中只能给字符串和url图片
+           添加的部分当成元素看。可以修改各个属性*/
+        div::before{
+            content: "象拔蚌说：";
+            /*转换为行内块状元素*/
+            display: block;
+            width: 100px;
+            height: 30px;
+            background-color: #fe9f5b;
+        }
+        p::after{
+            content: "--------蔡徐坤";
+            display: block;
+            width: 100px;
+            height: 50px;
+            background-color: #ddd;
+            font-family: "Adobe Arabic";
+            border: 5px #1bffd1 solid;
+        }
+    </style>
+</head>
+<body>
+    <p>NBA中国形象大使</p>
+    <div>啥大赛的忽视的回复为好的师傅指导书</div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <hr style="border: 1px solid #ffaaaa  ">
+    <h4>
+    gfdbgubdfgbsdufybgufdgubfdubgufbsgfdgfdsgfdsg
+    dfg
+    df
+    g
+    df
+    g
+
+    df
+    g
+    dfsg
+    dfsgdsfg
+    dfs
+    g
+    fd
+    sgfdgdf
+
+    gdfgdfsg
+    ds
+    fg
+    fd
+    g
+
+    df
+    gfds
+    g
+    fds
+    g
+    sdf
+    g
+    sd
+    fg
+
+    fd
+    g
+    sdf
+    g
+    fd
+    gfdbgubdfgbsdufybgufdgubfdubgufbsgfdgfdsgfdsg
+    dfg
+    df
+    g
+    df
+    g
+
+    df
+    g
+    dfsg
+    dfsgdsfg
+    dfs
+    g
+    fd
+    sgfdgdf
+
+    gdfgdfsg
+    ds
+    fg
+    fd
+    g
+
+    df
+    gfds
+    g
+    fds
+    g
+    sdf
+    g
+    sd
+    fg
+
+    fd
+    g
+    sdf
+    g
+    fd
+    gfdbgubdfgbsdufybgufdgubfdubgufbsgfdgfdsgfdsg
+    dfg
+    df
+    g
+    df
+    g
+
+    df
+    g
+    dfsg
+    dfsgdsfg
+    dfs
+    g
+    fd
+    sgfdgdf
+
+    gdfgdfsg
+    ds
+    fg
+    fd
+    g
+
+    df
+    gfds
+    g
+    fds
+    g
+    sdf
+    g
+    sd
+    fg
+
+    fd
+    g
+    sdf
+    g
+    fd
+    gfdbgubdfgbsdufybgufdgubfdubgufbsgfdgfdsgfdsg
+    dfg
+    df
+    g
+    df
+    g
+
+    df
+    g
+    dfsg
+    dfsgdsfg
+    dfs
+    g
+    fd
+    sgfdgdf
+
+    gdfgdfsg
+    ds
+    fg
+    fd
+    g
+
+    df
+    gfds
+    g
+    fds
+    g
+    sdf
+    g
+    sd
+    fg
+
+    fd
+    g
+    sdf
+    g
+    fd
+    gfdbgubdfgbsdufybgufdgubfdubgufbsgfdgfdsgfdsg
+    dfg
+    df
+    g
+    df
+    g
+
+    df
+    g
+    dfsg
+    dfsgdsfg
+    dfs
+    g
+    fd
+    sgfdgdf
+
+    gdfgdfsg
+    ds
+    fg
+    fd
+    g
+
+    df
+    gfds
+    g
+    fds
+    g
+    sdf
+    g
+    sd
+    fg
+
+    fd
+    g
+    sdf
+    g
+    fd
+    gfdbgubdfgbsdufybgufdgubfdubgufbsgfdgfdsgfdsg
+    dfg
+    df
+    g
+    df
+    g
+
+    df
+    g
+    dfsg
+    dfsgdsfg
+    dfs
+    g
+    fd
+    sgfdgdf
+
+    gdfgdfsg
+    ds
+    fg
+    fd
+    g
+
+    df
+    gfds
+    g
+    fds
+    g
+    sdf
+    g
+    sd
+    fg
+
+    fd
+    g
+    sdf
+    g
+    fd
+    gfdbgubdfgbsdufybgufdgubfdubgufbsgfdgfdsgfdsg
+    dfg
+    df
+    g
+    df
+    g
+
+    df
+    g
+    dfsg
+    dfsgdsfg
+    dfs
+    g
+    fd
+    sgfdgdf
+
+    gdfgdfsg
+    ds
+    fg
+    fd
+    g
+
+    df
+    gfds
+    g
+    fds
+    g
+    sdf
+    g
+    sd
+    fg
+
+    fd
+    g
+    sdf
+    g
+    fd
+    gfdbgubdfgbsdufybgufdgubfdubgufbsgfdgfdsgfdsg
+    dfg
+    df
+    g
+    df
+    g
+
+    df
+    g
+    dfsg
+    dfsgdsfg
+    dfs
+    g
+    fd
+    sgfdgdf
+
+    gdfgdfsg
+    ds
+    fg
+    fd
+    g
+
+    df
+    gfds
+    g
+    fds
+    g
+    sdf
+    g
+    sd
+    fg
+
+    fd
+    g
+    sdf
+    g
+    fd
+    gfdbgubdfgbsdufybgufdgubfdubgufbsgfdgfdsgfdsg
+    dfg
+    df
+    g
+    df
+    g
+
+    df
+    g
+    dfsg
+    dfsgdsfg
+    dfs
+    g
+    fd
+    sgfdgdf
+
+    gdfgdfsg
+    ds
+    fg
+    fd
+    g
+
+    df
+    gfds
+    g
+    fds
+    g
+    sdf
+    g
+    sd
+    fg
+
+    fd
+    g
+    sdf
+    g
+    fd
+    gfdbgubdfgbsdufybgufdgubfdubgufbsgfdgfdsgfdsg
+    dfg
+    df
+    g
+    df
+    g
+
+    df
+    g
+    dfsg
+    dfsgdsfg
+    dfs
+    g
+    fd
+    sgfdgdf
+
+    gdfgdfsg
+    ds
+    fg
+    fd
+    g
+
+    df
+    gfds
+    g
+    fds
+    g
+    sdf
+    g
+    sd
+    fg
+
+    fd
+    g
+    sdf
+    g
+    fd
+    gfdbgubdfgbsdufybgufdgubfdubgufbsgfdgfdsgfdsg
+    dfg
+    df
+    g
+    df
+    g
+
+    df
+    g
+    dfsg
+    dfsgdsfg
+    dfs
+    g
+    fd
+    sgfdgdf
+
+    gdfgdfsg
+    ds
+    fg
+    fd
+    g
+
+    df
+    gfds
+    g
+    fds
+    g
+    sdf
+    g
+    sd
+    fg
+
+    fd
+    g
+    sdf
+    g
+    fd
+
+</h4>
+</body>
+</html>

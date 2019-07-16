@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        /*相邻兄弟选择器*/
+        /*p+p{color:#f00;}*/
+        /*通用兄弟选择器*/
+        /*h3+div{margin-top: 30px}*/
+        div+div{margin-top: 50px}
+        /*自定义属性   元素选择器*/
+        [data-toggle="abc"]{color: #ffff1c;}
+        [class="c1"]{color: #ff0000}
+        [class="d1"][abc-dde]{color: #00B7FF}
+        span[id]{color: #1bffd1}
+        /*[title="nozuonodie"]{color: #fe9f5b}*/
+        /*模糊属性查询  ^=  匹配值里有value开头
+                      $=  匹配值里有value结尾
+                      *=   匹配值里有value的元素
+                      ~=   匹配值里有value这个单词的元素*/
+        [title^="no"]{
+            color: #fe9f5b;}
+        [title$="die"]{color: green}
+    </style>
+</head>
+<body>
+<h3 class="c1">静夜思</h3>
+<div data-toggle="123">窗前明月光</div>
+<div data-toggle="abc">疑是地上霜</div>
+<div class="d1" abc-dde="123">举头望明月</div>
+<span id="s1">
+    <div>低头思故乡</div>
+</span>
+<p title="nozuono">一套兜里没有钱</p>
+<p title="abcdie">一套象拔蚌没有钱</p>
+
+
+</body>
+</html>

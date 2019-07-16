@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        p:first-child{color: #f00;}
+        p:last-child{ color: #0aa1ed}
+        p:nth-child(6){color: #1bffd1}
+        /*div里什么有没有empty*/
+        div:empty{
+            height: 20px;
+            background-color: #ff0;}
+        /*独生子女*/
+        /*a:only-child{color: #fe9f5b}*/
+        /*:not 否定*/
+        a:not(:only-child){
+            color: #1bffd1;
+        }
+    </style>
+</head>
+<body>
+<!--<div>-->
+    <!--<a href="">1111</a>-->
+<!--</div>-->
+<!--<div>-->
+    <!--<a href="">1111</a>-->
+    <!--<a>12321</a>-->
+    <!--<a>321321</a>-->
+<!--</div>-->
+<p>老大</p>
+<p>老二</p>
+<p>老三</p>
+<p>老四</p>
+<p>老五</p>
+<p>老六</p>
+
+<p>老七</p>
+
+<p>老八</p>
+</body>
+
+
+
+
+</html>
